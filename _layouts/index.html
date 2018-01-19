@@ -1,0 +1,39 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{site.title}} | 首頁</title>
+    <link rel="stylesheet" href="{{ '/assets/css/index.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+     <div>
+      <div id="home">
+        <a href="/">
+          <span>{{site.title}}</span>
+        </a>
+      </div>
+      <nav class="main">
+        <ul>
+         <li>
+          <a href="/posts"><span></span></a>
+         </li>
+         <li>
+          <a href="/category"><span></span></a>
+         </li>
+         <li>
+          <a href="/aboutme"><span></span></a>
+         </li>
+        </ul>
+      </nav>
+     </div>
+    </header>
+    <article class="main">
+     <section id="hello"></section>
+     <section id="posts"></section>
+     <section id="tags"></section>
+     <footer></footer>
+    </article>
+  </body>
+</html>
