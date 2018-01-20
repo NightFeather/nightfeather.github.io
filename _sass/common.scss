@@ -1,2 +1,14 @@
 @import "reset";
 
+
+body {
+  font-size: 25px;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f3eff5 ;
+}
+
+article.main {
+  width: 75vw;
+  margin: auto;
+}
