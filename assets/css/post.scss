@@ -1,0 +1,62 @@
+---
+---
+
+@import "common";
+@import "header";
+
+h1 {
+  font-size: 2em;
+  font-weight: 900;
+  padding: 0.5em 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 800;
+  padding: 0.5em 0;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: 0.5em 0;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 0.5em 0;
+}
+
+strong { font-weight: 900; }
+
+article.main {
+  width: 100vw;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.content {
+  margin: 1em 0;
+  padding: 1em;
+
+  a, a:visited { color: blue; }
+  p {
+    font-size: 20px;
+    padding: 0.2em;
+    line-height: 1.2em;
+
+    &.intensify {
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.8em;
+    }
+  }
+}
+
+footer { width: 100vw; height: 30vh; }
