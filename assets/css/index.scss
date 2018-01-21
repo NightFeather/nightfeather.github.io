@@ -3,3 +3,59 @@
 
 @import "common";
 @import "header";
+
+h3 { font-size: 1.5em; }
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 80vh;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+article {
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+
+    ul {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      width: 50%;
+
+      background-color: #b2d383;
+      border: #73a05c 1px solid;
+      border-radius: 0.5em;
+
+      li {
+        display: flex;
+        justify-content: center;
+        padding: 0.5em;
+        flex-grow: 2;
+      }
+
+      li:not(:last-child){
+        border-right: #73a05c 1px solid;
+      }
+
+    }
+  }
+  footer {
+    height: 30vh;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}

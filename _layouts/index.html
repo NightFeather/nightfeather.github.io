@@ -9,10 +9,72 @@
   <body>
     {% include header.html %}
     <article class="main">
-     <section id="hello"></section>
-     <section id="posts"></section>
-     <section id="tags"></section>
-     <footer></footer>
+      <section id="hello">
+        <div>
+          <span>這是一個連製作者都不太清楚要做啥的站 ' -')</span>
+        </div>
+      </section>
+      <nav class="links">
+       <ul>
+        <li>
+         <a href="#posts"><span>近期更新</span></a>
+        </li>
+        <li>
+         <a href="#category"><span>分類列表</span></a>
+        </li>
+        <li>
+         <a href="#tags"><span>一堆標籤</span></a>
+        </li>
+       </ul>
+      </nav>
+      <section id="posts">
+        <h3>近期更新</h3>
+        <div class="list">
+          {% if site.posts.size > 0 %}
+          <ul>
+            {% for post in site.posts limit: 5 %}
+            <li>
+              <a href="{{ post.url | relative_url }}"><span>{{ post.title }}</span></a>
+              <span>{{ post.date | date_to_long_string }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <span>沒有文章 QQ</span>
+          {% endif %}
+        </div>
+      </section>
+      <section id="category">
+        <h3>分類列表</h3>
+        <div class="list">
+          {% if site.categories.size > 0 %}
+          <ul>
+            {% for category in site.categories %}
+            <li><a href="{{ category.url | relative_url }}"><span>{{ category.title }}</span></a></li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <span>這裡空空 der</span>
+          {% endif %}
+        </div>
+      </section>
+      <section id="tags">
+        <h3>一堆標籤</h3>
+        <div class="list">
+          {% if site.tags.size > 0 %}
+          <ul>
+            {% for tag in site.tags %}
+            <li><a href="{{ tag.url | relative_url }}"><span>{{ tag.title }}</span></a></li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <span>我什麼都沒有.jpg</span>
+          {% endif %}
+        </div>
+      </section>
+      <footer>
+        <span>腳底板 ' -')</span>
+      </footer>
     </article>
   </body>
 </html>

@@ -1,7 +1,6 @@
 @import "reset";
 @import "syntax";
 
-
 body {
   font-size: 25px;
   width: 100vw;
@@ -13,3 +12,9 @@ article.main {
   width: 75vw;
   margin: auto;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
